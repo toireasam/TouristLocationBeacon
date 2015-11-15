@@ -1,5 +1,5 @@
 //
-//  Parse.h
+//  CheckCloud.h
 //  Example
 //
 //  Created by Toireasa Moley on 15/11/2015.
@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 
-@interface Parse : PFObject
-
+@interface CheckCloud : PFObject
++ (void)CheckIdInCloud;
++(void)Check:(NSString *)check;
 @end
