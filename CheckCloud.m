@@ -7,6 +7,7 @@
 //
 
 #import "CheckCloud.h"
+#import "JLEDistancesDemo.h"
 
 @implementation CheckCloud
 +(void)CheckIdInCloud
@@ -30,20 +31,32 @@
         
     }*/
     PFQuery *query = [PFQuery queryWithClassName:@"TouristLocations"];
-    [query whereKey:@"UUID" equalTo:@"EBEFD083-70A2-47C8-9837-E7B5634DF524"];
+    [query whereKey:@"UUID" equalTo:check];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
             NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
             // Do something with the found objects
+            if(objects.count == 0)
+            {
+                NSLog(@"testing none were found");
+                [JLEDistancesDemo ResultFromParse:NULL andLocationName:NULL];
+            }
             for (PFObject *object in objects) {
                 NSLog(@"%@", object.objectId);
+                NSLog(@"%@",object);
+                NSString *TouristLocationName = object[@"TouristLocationName"];
+
                 //lets send back the info
+                [JLEDistancesDemo ResultFromParse:@"The id was found" andLocationName:TouristLocationName];
+            
+                
                 
             }
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
+        
         }
         
     }];

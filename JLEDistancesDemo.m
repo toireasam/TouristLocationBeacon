@@ -45,6 +45,7 @@ static NSString * const kIdentifier = @"jaalee.Example";
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
     
     [CheckCloud CheckIdInCloud];
+   
     
 
     
@@ -70,11 +71,37 @@ static NSString * const kIdentifier = @"jaalee.Example";
     
     // Save as string
     NSString *UUID = [temp.proximityUUID UUIDString];
+
+    
     
     //Send details to parse for test
     [CheckCloud Check:UUID];
     
+    
+    
 }
+
++(void)ResultFromParse:(NSString *)uuidFound andLocationName:(NSString *)locationName
+{
+
+    if(uuidFound != NULL)
+        {
+               NSLog(uuidFound);
+            NSLog(locationName);
+               // set the text fields of the result
+          
+          
+            
+        }
+    else
+    {
+         NSLog(@"null found here");
+    }
+        
+    
+}
+
+
 @end
 
 

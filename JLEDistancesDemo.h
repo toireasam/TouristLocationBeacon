@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *mMajorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
++(void)ResultFromParse:(NSString*)uuidFound andLocationName:(NSString *)locationName;
++(void)DisplayBeaconRelatedInfo;
 @end
