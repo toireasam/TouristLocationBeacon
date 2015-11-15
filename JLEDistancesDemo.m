@@ -8,7 +8,8 @@
 
 #import "JLEDistancesDemo.h"
 #import <JAALEEBeaconSDK/JAALEEBeaconIOSSDK.h>
-#import "Parse/Parse.h"
+#import "CheckCloud.h"
+
 
 
 static NSString * const kIdentifier = @"jaalee.Example";
@@ -17,6 +18,7 @@ static NSString * const kIdentifier = @"jaalee.Example";
 
 @property (nonatomic, strong) JLEBeaconManager  *beaconManager;
 @property (nonatomic, strong) JLEBeaconRegion  *beaconRegion;
+@property (nonatomic, strong) CheckCloud  *checkInCloud;
 @end
 
 @implementation JLEDistancesDemo
@@ -42,6 +44,10 @@ static NSString * const kIdentifier = @"jaalee.Example";
     
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
     
+    [CheckCloud CheckIdInCloud];
+    
+
+    
     
     
 }
@@ -62,39 +68,11 @@ static NSString * const kIdentifier = @"jaalee.Example";
     self.mMinorValue.text = [NSString stringWithFormat:@"%d", [temp.major intValue]];
     self.mAccValue.text = [NSString stringWithFormat:@"%.2f", temp.accuracy];
     
-    //send details to parse for test
+    // Save as string
+    NSString *UUID = [temp.proximityUUID UUIDString];
     
-    
-    
-  
-    
-    @try {
-        PFObject *testBeacon = [PFObject objectWithClassName:@"TouristLocations"];
-        testBeacon[@"UUID"] = [temp.proximityUUID UUIDString];
-        [testBeacon saveInBackground];
-
-    }
-    
-    @catch ( NSException *e ) {
-       
-    }
-    PFQuery *query = [PFQuery queryWithClassName:@"TouristLocations"];
-    [query whereKey:@"UUID" equalTo:@"EBEFD083-70A2-47C8-9837-E7B5634DF524"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded.
-            NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
-            // Do something with the found objects
-            for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
-            }
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-        
-    }];
-
+    //Send details to parse for test
+    [CheckCloud Check:UUID];
     
 }
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B2A096A01BF9128100522930 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */; };
+		B2A096AD1BF9203D00522930 /* CheckCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A096AC1BF9203D00522930 /* CheckCloud.m */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistancesDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistancesDemo.m */; };
@@ -66,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
+		B2A096AB1BF9203D00522930 /* CheckCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckCloud.h; sourceTree = "<group>"; };
+		B2A096AC1BF9203D00522930 /* CheckCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckCloud.m; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -288,6 +291,8 @@
 				BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */,
 				BEEAB2F61BF2831F00B562B8 /* JLEDistancesDemo.h */,
 				BEEAB2F71BF2831F00B562B8 /* JLEDistancesDemo.m */,
+				B2A096AB1BF9203D00522930 /* CheckCloud.h */,
+				B2A096AC1BF9203D00522930 /* CheckCloud.m */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */,
 				C404049A19060F6300B264BA /* ViewController.m in Sources */,
 				BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */,
+				B2A096AD1BF9203D00522930 /* CheckCloud.m in Sources */,
 				C404049419060F6300B264BA /* AppDelegate.m in Sources */,
 				C404049019060F6300B264BA /* main.m in Sources */,
 				BEEAB2F81BF2831F00B562B8 /* JLEDistancesDemo.m in Sources */,

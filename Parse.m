@@ -10,10 +10,4 @@
 
 @implementation Parse
 
-- (void)TakeID
-{
-    
-}
-
 @end
-
