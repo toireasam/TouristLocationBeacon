@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B2A096A01BF9128100522930 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */; };
-		B2A096AD1BF9203D00522930 /* CheckCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A096AC1BF9203D00522930 /* CheckCloud.m */; };
+		B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A096AC1BF9203D00522930 /* ParseChecker.m */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
-		BEEAB2F81BF2831F00B562B8 /* JLEDistancesDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistancesDemo.m */; };
+		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
 		BEEAB2FC1BF28A5700B562B8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEAB2FB1BF28A5700B562B8 /* CFNetwork.framework */; };
 		BEEAB2FE1BF28A7800B562B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEAB2FD1BF28A7800B562B8 /* CoreLocation.framework */; };
 		BEEAB3001BF28A8900B562B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEAB2FF1BF28A8900B562B8 /* QuartzCore.framework */; };
@@ -67,14 +67,14 @@
 
 /* Begin PBXFileReference section */
 		B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
-		B2A096AB1BF9203D00522930 /* CheckCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckCloud.h; sourceTree = "<group>"; };
-		B2A096AC1BF9203D00522930 /* CheckCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckCloud.m; sourceTree = "<group>"; };
+		B2A096AB1BF9203D00522930 /* ParseChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseChecker.h; sourceTree = "<group>"; };
+		B2A096AC1BF9203D00522930 /* ParseChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseChecker.m; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
 		BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitProgressShow.m; sourceTree = "<group>"; };
-		BEEAB2F61BF2831F00B562B8 /* JLEDistancesDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEDistancesDemo.h; sourceTree = "<group>"; };
-		BEEAB2F71BF2831F00B562B8 /* JLEDistancesDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLEDistancesDemo.m; sourceTree = "<group>"; };
+		BEEAB2F61BF2831F00B562B8 /* JLEDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLEDistance.h; sourceTree = "<group>"; };
+		BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLEDistance.m; sourceTree = "<group>"; };
 		BEEAB2FB1BF28A5700B562B8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BEEAB2FD1BF28A7800B562B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BEEAB2FF1BF28A8900B562B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -289,10 +289,10 @@
 				B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */,
 				BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */,
 				BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */,
-				BEEAB2F61BF2831F00B562B8 /* JLEDistancesDemo.h */,
-				BEEAB2F71BF2831F00B562B8 /* JLEDistancesDemo.m */,
-				B2A096AB1BF9203D00522930 /* CheckCloud.h */,
-				B2A096AC1BF9203D00522930 /* CheckCloud.m */,
+				BEEAB2F61BF2831F00B562B8 /* JLEDistance.h */,
+				BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */,
+				B2A096AB1BF9203D00522930 /* ParseChecker.h */,
+				B2A096AC1BF9203D00522930 /* ParseChecker.m */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -424,10 +424,10 @@
 				BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */,
 				C404049A19060F6300B264BA /* ViewController.m in Sources */,
 				BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */,
-				B2A096AD1BF9203D00522930 /* CheckCloud.m in Sources */,
+				B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */,
 				C404049419060F6300B264BA /* AppDelegate.m in Sources */,
 				C404049019060F6300B264BA /* main.m in Sources */,
-				BEEAB2F81BF2831F00B562B8 /* JLEDistancesDemo.m in Sources */,
+				BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

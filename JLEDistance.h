@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 
-@interface JLEDistancesDemo : ViewController
-
+@interface JLEDistance : ViewController
+// Properties
 @property (weak, nonatomic) IBOutlet UILabel *mProximityUUID;
 @property (weak, nonatomic) IBOutlet UILabel *mMajorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
-+(void)ResultFromParse:(NSString*)uuidFound andLocationName:(NSString *)locationName;
-+(void)DisplayBeaconRelatedInfo;
+
+
+// Methods
++(void)RecieveParseDetails:(NSString *)locationName;
+-(void)UpdateLabels;
 @end

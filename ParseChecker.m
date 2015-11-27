@@ -6,57 +6,44 @@
 //  Copyright © 2015 jaalee. All rights reserved.
 //
 
-#import "CheckCloud.h"
+#import "ParseChecker.h"
 #import "JLEDistance.h"
 
-@implementation CheckCloud
-+(void)CheckIdInCloud
-{
-    NSLog(@"frig knows");
-}
-+(void)Check:(NSString *)check
+@implementation ParseChecker
+
++(void)CheckIdInParse:(NSString *)check
 {
     
-    NSLog(check);
-    
-   /* @try {
-        PFObject *testBeacon = [PFObject objectWithClassName:@"TouristLocations"];
-        testBeacon[@"UUID"] = check;
-        [testBeacon saveInBackground];
-        
-        
-    }
-    
-    @catch ( NSException *e ) {
-        
-    }*/
     PFQuery *query = [PFQuery queryWithClassName:@"TouristLocations"];
     [query whereKey:@"UUID" equalTo:check];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
+        if (!error)
+        {
             // The find succeeded.
             NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
             // Do something with the found objects
             if(objects.count == 0)
             {
-                NSLog(@"testing none were found");
-                [JLEDistance ResultFromParse:NULL andLocationName:NULL];
+                // No beacons were found
+                
             }
-            for (PFObject *object in objects) {
+            for (PFObject *object in objects)
+            {
+                
                 NSLog(@"%@", object.objectId);
                 NSLog(@"%@",object);
-                NSString *TouristLocationName = object[@"TouristLocationName"];
-
-                //lets send back the info
-                [JLEDistance ResultFromParse:@"The id was found" andLocationName:TouristLocationName];
-            
+                NSString *touristLocationName = object[@"TouristLocationName"];
                 
+                // Lets send back the info
+                [JLEDistance RecieveParseDetails:touristLocationName];
                 
             }
-        } else {
+        }
+        else
+        {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
-        
+            
         }
         
     }];

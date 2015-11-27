@@ -8,6 +8,6 @@
 
 #import <Parse/Parse.h>
 
-@interface Parse : PFObject
-
+@interface ParseChecker : PFObject
++(void)CheckIdInParse:(NSString *)uuid;
 @end

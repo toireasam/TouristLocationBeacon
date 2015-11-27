@@ -6,22 +6,23 @@
 //  Copyright (c) 2014年 jaalee. All rights reserved.
 //
 
-#import "JLEDistancesDemo.h"
+#import "JLEDistance.h"
 #import <JAALEEBeaconSDK/JAALEEBeaconIOSSDK.h>
-#import "CheckCloud.h"
+#import "ParseChecker.h"
 
 
 
 static NSString * const kIdentifier = @"jaalee.Example";
 
-@interface JLEDistancesDemo ()<JLEBeaconManagerDelegate>
+@interface JLEDistance ()<JLEBeaconManagerDelegate>
 
 @property (nonatomic, strong) JLEBeaconManager  *beaconManager;
 @property (nonatomic, strong) JLEBeaconRegion  *beaconRegion;
-@property (nonatomic, strong) CheckCloud  *checkInCloud;
 @end
 
-@implementation JLEDistancesDemo
+@implementation JLEDistance
+
+NSString *locationLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,13 +44,7 @@ static NSString * const kIdentifier = @"jaalee.Example";
     _beaconRegion = [[JLEBeaconRegion alloc] initWithProximityUUID:JAALEE_PROXIMITY_UUID identifier:kIdentifier];
     
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
-    
-    [CheckCloud CheckIdInCloud];
-   
-    
-
-    
-    
+    [self UpdateLabels];
     
 }
 
@@ -69,37 +64,22 @@ static NSString * const kIdentifier = @"jaalee.Example";
     self.mMinorValue.text = [NSString stringWithFormat:@"%d", [temp.major intValue]];
     self.mAccValue.text = [NSString stringWithFormat:@"%.2f", temp.accuracy];
     
-    // Save as string
-    NSString *UUID = [temp.proximityUUID UUIDString];
-
-    
-    
-    //Send details to parse for test
-    [CheckCloud Check:UUID];
-    
-    
+    // Go to parse and check if UUID is there
+    NSString *uuid = [temp.proximityUUID UUIDString];
+    [ParseChecker CheckIdInParse:uuid];
     
 }
 
-+(void)ResultFromParse:(NSString *)uuidFound andLocationName:(NSString *)locationName
+-(void)UpdateLabels
 {
-
-    if(uuidFound != NULL)
-        {
-               NSLog(uuidFound);
-            NSLog(locationName);
-               // set the text fields of the result
-          
-          
-            
-        }
-    else
-    {
-         NSLog(@"null found here");
-    }
-        
-    
+    self.mMinorValue.text = locationLabel;
 }
+
++(void)RecieveParseDetails:(NSString *)locationName
+{
+    locationLabel = locationName;
+}
+
 
 
 @end
