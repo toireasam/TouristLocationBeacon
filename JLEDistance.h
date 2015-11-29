@@ -14,9 +14,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *mMajorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
-
+@property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl;
 
 // Methods
 +(void)RecieveParseDetails:(NSString *)locationName;
 -(void)UpdateLabels;
++(void)sendToParse:(NSString *)uuid;
 @end

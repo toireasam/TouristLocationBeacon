@@ -44,7 +44,6 @@ NSString *locationLabel;
     _beaconRegion = [[JLEBeaconRegion alloc] initWithProximityUUID:JAALEE_PROXIMITY_UUID identifier:kIdentifier];
     
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
-    [self UpdateLabels];
     
 }
 
@@ -66,20 +65,25 @@ NSString *locationLabel;
     
     // Go to parse and check if UUID is there
     NSString *uuid = [temp.proximityUUID UUIDString];
-    [ParseChecker CheckIdInParse:uuid];
+    [self sendToParse:uuid];
     
 }
 
 -(void)UpdateLabels
 {
-    self.mMinorValue.text = locationLabel;
+    self.touirstLocationNameLbl.text = locationLabel;
+}
+
+-(void)sendToParse:(NSString *)uuid
+{
+  [ParseChecker CheckIdInParse:uuid];
+  [self UpdateLabels];
 }
 
 +(void)RecieveParseDetails:(NSString *)locationName
 {
     locationLabel = locationName;
 }
-
 
 
 @end
