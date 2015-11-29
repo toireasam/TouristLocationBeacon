@@ -15,6 +15,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
 @property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl;
+@property (nonatomic, strong) NSString *randomString;
+
+
+
 
 // Methods
 +(void)RecieveParseDetails:(NSString *)locationName;

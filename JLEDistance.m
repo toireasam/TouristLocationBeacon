@@ -18,11 +18,13 @@ static NSString * const kIdentifier = @"jaalee.Example";
 
 @property (nonatomic, strong) JLEBeaconManager  *beaconManager;
 @property (nonatomic, strong) JLEBeaconRegion  *beaconRegion;
+
 @end
 
 @implementation JLEDistance
-
+@synthesize randomString;
 NSString *locationLabel;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,6 +46,11 @@ NSString *locationLabel;
     _beaconRegion = [[JLEBeaconRegion alloc] initWithProximityUUID:JAALEE_PROXIMITY_UUID identifier:kIdentifier];
     
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
+ 
+    NSLog(randomString);
+  
+ 
+        
     
 }
 
