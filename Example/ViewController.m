@@ -89,7 +89,7 @@ NSString * text;
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"distance"]) {
         JLEDistance *nextVC = (JLEDistance *)[segue destinationViewController];
-        nextVC.randomString = text;
+        nextVC.hallPreference = text;
         
      
     }

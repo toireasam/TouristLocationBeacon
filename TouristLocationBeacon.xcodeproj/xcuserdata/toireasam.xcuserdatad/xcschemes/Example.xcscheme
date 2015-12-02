@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C404047F19060F6300B264BA"
-               BuildableName = "Example.app"
-               BlueprintName = "Example"
-               ReferencedContainer = "container:Example.xcodeproj">
+               BuildableName = "TouristLocationBeacon.app"
+               BlueprintName = "TouristLocationBeacon"
+               ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C40404A019060F6300B264BA"
-               BuildableName = "ExampleTests.xctest"
-               BlueprintName = "ExampleTests"
-               ReferencedContainer = "container:Example.xcodeproj">
+               BuildableName = "TouristLocationBeacon.xctest"
+               BlueprintName = "TouristLocationBeaconTests"
+               ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "TouristLocationBeacon.app"
+            BlueprintName = "TouristLocationBeacon"
+            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "TouristLocationBeacon.app"
+            BlueprintName = "TouristLocationBeacon"
+            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "Example.app"
-            BlueprintName = "Example"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BuildableName = "TouristLocationBeacon.app"
+            BlueprintName = "TouristLocationBeacon"
+            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

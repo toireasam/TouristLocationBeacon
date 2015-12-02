@@ -33,9 +33,11 @@
                 NSLog(@"%@", object.objectId);
                 NSLog(@"%@",object);
                 NSString *touristLocationName = object[@"TouristLocationName"];
+                NSString *furtherInformation= object[@"Information"];
+                NSString *category = object[@"Category"];
                 
                 // Lets send back the info
-                [JLEDistance RecieveParseDetails:touristLocationName];
+                [JLEDistance RecieveParseDetails:touristLocationName FurtherInformation:furtherInformation andCategory:category];
                 
             }
         }

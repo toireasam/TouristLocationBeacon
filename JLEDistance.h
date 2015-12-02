@@ -15,13 +15,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
 @property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl;
-@property (nonatomic, strong) NSString *randomString;
+@property (weak, nonatomic) IBOutlet UILabel *furtherInformationLbl;
+@property (nonatomic, strong) NSString *hallPreference;
 
 
 
 
 // Methods
-+(void)RecieveParseDetails:(NSString *)locationName;
++(void)RecieveParseDetails:(NSString *)locationName FurtherInformation:(NSString *)furtherInformation andCategory:(NSString *)category;
 -(void)UpdateLabels;
 +(void)sendToParse:(NSString *)uuid;
 @end

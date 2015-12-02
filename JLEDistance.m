@@ -22,8 +22,10 @@ static NSString * const kIdentifier = @"jaalee.Example";
 @end
 
 @implementation JLEDistance
-@synthesize randomString;
-NSString *locationLabel;
+@synthesize hallPreference;
+NSString *locationNameText;
+NSString *furtherInformationText;
+NSString *categoryText;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,8 +48,9 @@ NSString *locationLabel;
     _beaconRegion = [[JLEBeaconRegion alloc] initWithProximityUUID:JAALEE_PROXIMITY_UUID identifier:kIdentifier];
     
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
- 
-    NSLog(randomString);
+    NSLog(@"the random string is");
+    
+    NSLog(hallPreference);
   
  
         
@@ -78,7 +81,20 @@ NSString *locationLabel;
 
 -(void)UpdateLabels
 {
-    self.touirstLocationNameLbl.text = locationLabel;
+    if([categoryText isEqual:@"Museum"] && [hallPreference isEqual:@"off"])
+    {
+        // Don't populate with info
+        self.touirstLocationNameLbl.text = @"check preferences";
+        self.furtherInformationLbl.text = @"check preferences";
+        self.mProximityUUID.text = @"check preferences";
+    }
+    else
+    {
+        // Don't populate with info
+        self.touirstLocationNameLbl.text = locationNameText;
+        self.furtherInformationLbl.text = furtherInformationText;
+        
+    }
 }
 
 -(void)sendToParse:(NSString *)uuid
@@ -87,9 +103,11 @@ NSString *locationLabel;
   [self UpdateLabels];
 }
 
-+(void)RecieveParseDetails:(NSString *)locationName
++(void)RecieveParseDetails:(NSString *)locationName FurtherInformation:(NSString *)furtherInformation andCategory:category
 {
-    locationLabel = locationName;
+    locationNameText = locationName;
+    furtherInformationText = furtherInformation;
+    categoryText = category;
 }
 
 
