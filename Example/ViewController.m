@@ -19,7 +19,10 @@
 @end
 
 @implementation ViewController
+@synthesize prefs;
 NSString * text;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,8 +30,19 @@ NSString * text;
     
     [self.mySwitch addTarget:self
                       action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    
+  
 
-        
+  prefs = [NSUserDefaults standardUserDefaults];
+    
+  NSString *myString = [prefs stringForKey:@"NewString"];
+    NSLog(myString);
+    NSLog(@"hi");
+    
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,10 +52,12 @@ NSString * text;
 }
 
 - (IBAction)buttonClicked:(UIButton *)sender {
-    if ([self.mySwitch isOn]) {
+            if ([self.mySwitch isOn]) {
         self.myText.text = @"The Switch is Off";
-        NSLog(@"Switch is on");
+        NSLog(@"Switch is off");
+        // saving an NSString
         [self.mySwitch setOn:NO animated:YES];
+                
     } else {
         self.myText.text = @"The Switch is On";
         [self.mySwitch setOn:YES animated:YES];
@@ -56,7 +72,17 @@ NSString * text;
     } else {
         self.myText.text = @"The Switch is Off";
         text = @"off";
+        [self setPrefs];
     }
+}
+
+-(void)setPrefs
+{
+    prefs = [NSUserDefaults standardUserDefaults];
+    
+    [prefs setObject:@"Offhere" forKey:@"NewString"];
+    [prefs synchronize];
+    
 }
 
 
@@ -64,6 +90,8 @@ NSString * text;
     if ([[segue identifier] isEqualToString:@"distance"]) {
         JLEDistance *nextVC = (JLEDistance *)[segue destinationViewController];
         nextVC.randomString = text;
+        
+     
     }
 }
 
