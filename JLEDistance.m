@@ -57,6 +57,22 @@ NSString *categoryText;
     
     NSLog(hallPreference);
     
+    PFQuery *query = [PFQuery queryWithClassName:@"TouristLocations"];
+    [query whereKey:@"UUID" equalTo:@"EBEFD083-70A2-47C8-9837-E7B5634DF524"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error)
+     {
+         if(!error)
+         {
+             PFFile *file = [object objectForKey:@"LocationImage"];
+             // file has not been downloaded yet, we just have a handle on this file
+             
+             // Tell the PFImageView about your file
+             self.imageHolderScreenTwo.file = file;
+             
+             // Now tell PFImageView to download the file asynchronously
+             [self.imageHolderScreenTwo loadInBackground];
+         }
+     }];
 
     
    

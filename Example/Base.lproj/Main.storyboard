@@ -122,12 +122,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4Xd-d5-hu1" customClass="PFImageView">
+                                <rect key="frame" x="20" y="400" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wRq-MJ-lPc"/>
                     <connections>
                         <outlet property="furtherInformationLbl" destination="Ooy-Jb-DN2" id="urT-zP-kVi"/>
+                        <outlet property="imageHolderScreenTwo" destination="4Xd-d5-hu1" id="D7G-Ay-oAl"/>
                         <outlet property="mProximityUUID" destination="NZL-Eo-PVK" id="lTj-WU-1Qd"/>
                         <outlet property="touirstLocationNameLbl" destination="u8k-Vv-uEq" id="pUN-2m-HI3"/>
                     </connections>
