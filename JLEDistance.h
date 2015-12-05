@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <PARSEUI/PFImageView.h>
 @interface JLEDistance : ViewController
 // Properties
 @property (weak, nonatomic) IBOutlet UILabel *mProximityUUID;
@@ -17,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *furtherInformationLbl;
 @property (nonatomic, strong) NSString *hallPreference;
+
+
+
+
 
 
 

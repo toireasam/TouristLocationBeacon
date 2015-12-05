@@ -8,11 +8,13 @@
 
 #import "AppDelegate.h"
 #import "Parse/Parse.h"
+#import "ParseUI/PFImageView.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [PFImageView class];
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)])
     {
         // are you running on iOS8?

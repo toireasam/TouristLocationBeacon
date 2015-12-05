@@ -9,6 +9,9 @@
 #import "JLEDistance.h"
 #import <JAALEEBeaconSDK/JAALEEBeaconIOSSDK.h>
 #import "ParseChecker.h"
+#import <PARSEUI/PFImageView.h>
+#import <Parse/Parse.h>
+
 
 
 
@@ -18,6 +21,8 @@ static NSString * const kIdentifier = @"jaalee.Example";
 
 @property (nonatomic, strong) JLEBeaconManager  *beaconManager;
 @property (nonatomic, strong) JLEBeaconRegion  *beaconRegion;
+
+
 
 @end
 
@@ -51,10 +56,14 @@ NSString *categoryText;
     NSLog(@"the random string is");
     
     NSLog(hallPreference);
-  
- 
-        
     
+
+    
+   
+    
+   
+   
+ 
 }
 
 - (void)didReceiveMemoryWarning
