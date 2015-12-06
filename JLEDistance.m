@@ -52,6 +52,8 @@ NSString *categoryText;
     
     _beaconRegion = [[JLEBeaconRegion alloc] initWithProximityUUID:JAALEE_PROXIMITY_UUID identifier:kIdentifier];
     
+    [self.beaconManager startMonitoringForRegion:self.beaconRegion];
+    
     [_beaconManager startRangingBeaconsInRegion:_beaconRegion];
     NSLog(@"the random string is");
     
@@ -75,8 +77,7 @@ NSString *categoryText;
      }];
 
     
-   
-    
+
    
    
  
@@ -100,7 +101,10 @@ NSString *categoryText;
     
     // Go to parse and check if UUID is there
     NSString *uuid = [temp.proximityUUID UUIDString];
+    if(uuid != NULL)
+    {
     [self sendToParse:uuid];
+    }
     
 }
 
@@ -126,6 +130,23 @@ NSString *categoryText;
 {
   [ParseChecker CheckIdInParse:uuid];
   [self UpdateLabels];
+}
+
+
+- (void)beaconManager:(JLEBeaconManager *)manager didEnterRegion:(JLEBeaconRegion *)region
+{
+    UILocalNotification *notification = [UILocalNotification new];
+    notification.alertBody = @"Enter region notification";
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (void)beaconManager:(JLEBeaconManager *)manager didExitRegion:(JLEBeaconRegion *)region
+{
+    UILocalNotification *notification = [UILocalNotification new];
+    notification.alertBody = @"Exit region notification";
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
 +(void)RecieveParseDetails:(NSString *)locationName FurtherInformation:(NSString *)furtherInformation andCategory:category

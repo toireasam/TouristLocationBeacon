@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2A096A01BF9128100522930 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */; };
 		B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A096AC1BF9203D00522930 /* ParseChecker.m */; };
+		B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */; };
+		B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
@@ -66,9 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
 		B2A096AB1BF9203D00522930 /* ParseChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseChecker.h; sourceTree = "<group>"; };
 		B2A096AC1BF9203D00522930 /* ParseChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseChecker.m; sourceTree = "<group>"; };
+		B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -286,13 +289,15 @@
 		C4E42C921907C89800A8152C /* Function */ = {
 			isa = PBXGroup;
 			children = (
-				B2A0969F1BF9128100522930 /* SVProgressHUD.bundle */,
+				B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */,
 				BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */,
 				BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */,
 				BEEAB2F61BF2831F00B562B8 /* JLEDistance.h */,
 				BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */,
 				B2A096AB1BF9203D00522930 /* ParseChecker.h */,
 				B2A096AC1BF9203D00522930 /* ParseChecker.m */,
+				B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */,
+				B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -398,7 +403,7 @@
 				C404048E19060F6300B264BA /* InfoPlist.strings in Resources */,
 				C404049719060F6300B264BA /* Main.storyboard in Resources */,
 				C49E58571B0EDD63002B8718 /* motion.png in Resources */,
-				B2A096A01BF9128100522930 /* SVProgressHUD.bundle in Resources */,
+				B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */,
 				C49E585A1B0EDD63002B8718 /* position_d.png in Resources */,
 				C4D9B9C81908E467009983B6 /* unknown_image.png in Resources */,
 				C49E585C1B0EDD63002B8718 /* position_f.png in Resources */,
@@ -424,6 +429,7 @@
 				BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */,
 				C404049A19060F6300B264BA /* ViewController.m in Sources */,
 				BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */,
+				B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */,
 				B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */,
 				C404049419060F6300B264BA /* AppDelegate.m in Sources */,
 				C404049019060F6300B264BA /* main.m in Sources */,
