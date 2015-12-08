@@ -11,6 +11,7 @@
 		B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */; };
 		B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */; };
 		B2C699DE1C1624EA00F35CDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699DD1C1624EA00F35CDD /* Default.png */; };
+		B2C699E01C17203300F35CDD /* imageedit_1_5615823276.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
@@ -73,7 +74,8 @@
 		B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
-		B2C699DD1C1624EA00F35CDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		B2C699DD1C1624EA00F35CDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
+		B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = imageedit_1_5615823276.gif; path = ../../Downloads/imageedit_1_5615823276.gif; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 		C404047719060F6300B264BA = {
 			isa = PBXGroup;
 			children = (
-				B2C699DD1C1624EA00F35CDD /* Default.png */,
+				B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */,
 				C49E585D1B0EE043002B8718 /* Beacon Connection */,
 				C4D9B9C01908E45B009983B6 /* Res */,
 				C4E42C921907C89800A8152C /* Function */,
@@ -228,6 +230,7 @@
 				C404049819060F6300B264BA /* ViewController.h */,
 				C404049919060F6300B264BA /* ViewController.m */,
 				C404049B19060F6300B264BA /* Images.xcassets */,
+				B2C699DD1C1624EA00F35CDD /* Default.png */,
 				C404048A19060F6300B264BA /* Supporting Files */,
 			);
 			path = Example;
@@ -399,6 +402,7 @@
 				C49E58501B0EDD5A002B8718 /* position_a.png in Resources */,
 				C4D9B9C61908E467009983B6 /* immediate_image.png in Resources */,
 				C49E58581B0EDD63002B8718 /* position_b.png in Resources */,
+				B2C699E01C17203300F35CDD /* imageedit_1_5615823276.gif in Resources */,
 				B2C699DE1C1624EA00F35CDD /* Default.png in Resources */,
 				C4D9B9C71908E467009983B6 /* near_image.png in Resources */,
 				C49E585B1B0EDD63002B8718 /* position_e.png in Resources */,
