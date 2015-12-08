@@ -20,15 +20,19 @@
         // are you running on iOS8?
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge|UIUserNotificationTypeAlert|UIUserNotificationTypeSound) categories:nil];
         [application registerUserNotificationSettings:settings];
+    
         
         
     } else {
         // iOS 7 or earlier
         UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound;
+       
+     
         [application registerForRemoteNotificationTypes:myTypes];
     }
     
     [Parse enableLocalDatastore];
+    
     
     // Initialize Parse.
     [Parse setApplicationId:@"ZoFHgn6IfSnsuYTSkvZOkecTejs8Wa00dpEWU6go"
@@ -39,8 +43,9 @@
         
     // Override point for customization after application launch.
     return YES;
+
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

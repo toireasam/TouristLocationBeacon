@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *furtherInformationLbl;
 @property (nonatomic, strong) NSString *hallPreference;
 @property (weak, nonatomic) IBOutlet PFImageView *imageHolderScreenTwo;
+@property (weak, nonatomic) IBOutlet UITextView *furtherInformationTxt;
 
 
 

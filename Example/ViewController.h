@@ -14,7 +14,5 @@
 
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) NSUserDefaults *prefs;
--(void)setPrefs;
-@property (weak, nonatomic) IBOutlet PFImageView *imageHolder;
+
 @end

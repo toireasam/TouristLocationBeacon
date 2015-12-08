@@ -76,7 +76,8 @@ NSString *categoryText;
          }
      }];
 
-    
+        [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]]; 
 
    
    
@@ -114,14 +115,14 @@ NSString *categoryText;
     {
         // Don't populate with info
         self.touirstLocationNameLbl.text = @"check preferences";
-        self.furtherInformationLbl.text = @"check preferences";
+        self.furtherInformationTxt.text = @"check preferences";
         self.mProximityUUID.text = @"check preferences";
     }
     else
     {
         // Don't populate with info
         self.touirstLocationNameLbl.text = locationNameText;
-        self.furtherInformationLbl.text = furtherInformationText;
+        self.furtherInformationTxt.text = furtherInformationText;
         
     }
 }

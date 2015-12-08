@@ -9,9 +9,7 @@
 #import "SettingsViewController.h"
 
 @interface SettingsViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *myButton;
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
-@property (weak, nonatomic) IBOutlet UITextField *myText;
 
 
 @end
@@ -35,6 +33,7 @@ NSString * text;
     NSString *myString = [prefs stringForKey:@"NewString"];
     NSLog(myString);
     NSLog(@"hi");
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
     
 }
 
@@ -46,13 +45,13 @@ NSString * text;
 
 - (IBAction)buttonClicked:(UIButton *)sender {
     if ([self.mySwitch isOn]) {
-        self.myText.text = @"The Switch is Off";
+
         NSLog(@"Switch is off");
         // saving an NSString
         [self.mySwitch setOn:NO animated:YES];
         
     } else {
-        self.myText.text = @"The Switch is On";
+
         [self.mySwitch setOn:YES animated:YES];
     }
 }
@@ -60,10 +59,8 @@ NSString * text;
 - (void)stateChanged:(UISwitch *)switchState
 {
     if ([switchState isOn]) {
-        self.myText.text = @"The Switch is On";
         text = @"on";
     } else {
-        self.myText.text = @"The Switch is Off";
         text = @"off";
         [self setPrefs];
     }
