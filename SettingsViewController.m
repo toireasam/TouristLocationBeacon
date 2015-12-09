@@ -33,7 +33,7 @@ NSString * text;
     NSString *myString = [prefs stringForKey:@"NewString"];
     NSLog(myString);
     NSLog(@"hi");
-    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+   
     
 }
 
@@ -77,7 +77,7 @@ NSString * text;
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"distance"]) {
+    if ([[segue identifier] isEqualToString:@"preference"]) {
         JLEDistance *nextVC = (JLEDistance *)[segue destinationViewController];
         nextVC.hallPreference = text;
         

@@ -25,6 +25,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ap9-3g-Ucs">
+                                <rect key="frame" x="49" y="409" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update my preferences"/>
+                                <connections>
+                                    <segue destination="VCb-1s-Eqk" kind="push" identifier="preference" id="UVW-ZH-1BQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -52,7 +60,7 @@
                                 <state key="selected" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
                                 <state key="highlighted" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
                                 <connections>
-                                    <segue destination="VCb-1s-Eqk" kind="push" id="QOB-xg-G88"/>
+                                    <segue destination="VCb-1s-Eqk" kind="push" identifier="distance" id="QOB-xg-G88"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiN-ef-PRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="883"/>
+            <point key="canvasLocation" x="2128" y="-953"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="edZ-Op-aSD">

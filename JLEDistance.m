@@ -118,9 +118,9 @@ NSString *categoryText;
     if([categoryText isEqual:@"Museum"] && [hallPreference isEqual:@"off"])
     {
         // Don't populate with info
-        self.touirstLocationNameLbl.text = @"check preferences";
-        self.furtherInformationTxt.text = @"check preferences";
-        self.mProximityUUID.text = @"check preferences";
+        self.touirstLocationNameLbl.text = @"you turned museum's off";
+        self.furtherInformationTxt.text = @"";
+        self.mProximityUUID.text = @"";
     }
     else
     {
