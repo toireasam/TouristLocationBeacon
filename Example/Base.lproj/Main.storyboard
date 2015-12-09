@@ -45,23 +45,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2my-YD-i4E">
-                                <rect key="frame" x="9" y="80" width="176" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gMI-oE-YAy">
+                                <rect key="frame" x="59" y="215" width="181" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I want more information">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="btn_play.png" backgroundImage="btn_play.png"/>
+                                <state key="selected" image="btn_play.png" backgroundImage="btn_play.png"/>
+                                <state key="highlighted" image="btn_play.png" backgroundImage="btn_play.png"/>
+                                <connections>
+                                    <segue destination="VCb-1s-Eqk" kind="push" id="QOB-xg-G88"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_5615823276.gif" id="1BO-Bg-bbY">
-                                <rect key="frame" x="28" y="144" width="253" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zDe-e8-jpn"/>
                     <connections>
-                        <outlet property="discoverImg" destination="1BO-Bg-bbY" id="nlN-eU-bRJ"/>
+                        <outlet property="discoverBtn" destination="gMI-oE-YAy" id="LlH-PS-nZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBm-kF-2lH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgX-Vg-Jgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="735"/>
+            <point key="canvasLocation" x="1643" y="810"/>
         </scene>
         <!--Distance-->
         <scene sceneID="nQi-OF-tlq">
@@ -136,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiN-ef-PRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="897"/>
+            <point key="canvasLocation" x="2032" y="883"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="edZ-Op-aSD">
@@ -193,7 +192,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imageedit_1_5615823276.gif" width="468" height="570"/>
+        <image name="btn_play.png" width="316" height="316"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QOB-xg-G88"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

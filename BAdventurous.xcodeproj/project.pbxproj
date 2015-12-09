@@ -11,7 +11,7 @@
 		B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */; };
 		B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */; };
 		B2C699DE1C1624EA00F35CDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699DD1C1624EA00F35CDD /* Default.png */; };
-		B2C699E01C17203300F35CDD /* imageedit_1_5615823276.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */; };
+		B2C699E41C172ACB00F35CDD /* btn_play.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699E31C172ACB00F35CDD /* btn_play.png */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
@@ -75,7 +75,7 @@
 		B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
 		B2C699DD1C1624EA00F35CDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
-		B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = imageedit_1_5615823276.gif; path = ../../Downloads/imageedit_1_5615823276.gif; sourceTree = "<group>"; };
+		B2C699E31C172ACB00F35CDD /* btn_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_play.png; path = ../../Downloads/btn_play.png; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		C404047719060F6300B264BA = {
 			isa = PBXGroup;
 			children = (
-				B2C699DF1C17203300F35CDD /* imageedit_1_5615823276.gif */,
+				B2C699E31C172ACB00F35CDD /* btn_play.png */,
 				C49E585D1B0EE043002B8718 /* Beacon Connection */,
 				C4D9B9C01908E45B009983B6 /* Res */,
 				C4E42C921907C89800A8152C /* Function */,
@@ -375,7 +375,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C404047B19060F6300B264BA /* Build configuration list for PBXProject "TouristLocationBeacon" */;
+			buildConfigurationList = C404047B19060F6300B264BA /* Build configuration list for PBXProject "BAdventurous" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -402,7 +402,6 @@
 				C49E58501B0EDD5A002B8718 /* position_a.png in Resources */,
 				C4D9B9C61908E467009983B6 /* immediate_image.png in Resources */,
 				C49E58581B0EDD63002B8718 /* position_b.png in Resources */,
-				B2C699E01C17203300F35CDD /* imageedit_1_5615823276.gif in Resources */,
 				B2C699DE1C1624EA00F35CDD /* Default.png in Resources */,
 				C4D9B9C71908E467009983B6 /* near_image.png in Resources */,
 				C49E585B1B0EDD63002B8718 /* position_e.png in Resources */,
@@ -414,6 +413,7 @@
 				B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */,
 				C49E585A1B0EDD63002B8718 /* position_d.png in Resources */,
 				C4D9B9C81908E467009983B6 /* unknown_image.png in Resources */,
+				B2C699E41C172ACB00F35CDD /* btn_play.png in Resources */,
 				C49E585C1B0EDD63002B8718 /* position_f.png in Resources */,
 				C4D9B9C51908E467009983B6 /* far_image.png in Resources */,
 			);
@@ -578,7 +578,7 @@
 				GCC_PREFIX_HEADER = "Example/TouristLocationBeacon-Prefix.pch";
 				INFOPLIST_FILE = "Example/TouristLocationBeacon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = toireasa.TouristLocationBeacon;
+				PRODUCT_BUNDLE_IDENTIFIER = toireasa.BAdventurous;
 				PRODUCT_NAME = TouristLocationBeacon;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
@@ -601,7 +601,7 @@
 				GCC_PREFIX_HEADER = "Example/TouristLocationBeacon-Prefix.pch";
 				INFOPLIST_FILE = "Example/TouristLocationBeacon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = toireasa.TouristLocationBeacon;
+				PRODUCT_BUNDLE_IDENTIFIER = toireasa.BAdventurous;
 				PRODUCT_NAME = TouristLocationBeacon;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
@@ -653,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C404047B19060F6300B264BA /* Build configuration list for PBXProject "TouristLocationBeacon" */ = {
+		C404047B19060F6300B264BA /* Build configuration list for PBXProject "BAdventurous" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C40404B019060F6300B264BA /* Debug */,

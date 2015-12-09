@@ -137,7 +137,7 @@ NSString *categoryText;
 - (void)beaconManager:(JLEBeaconManager *)manager didEnterRegion:(JLEBeaconRegion *)region
 {
     UILocalNotification *notification = [UILocalNotification new];
-    notification.alertBody = @"Enter region notification";
+    notification.alertBody = @"Ulster Museum is nearby!";
     
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }

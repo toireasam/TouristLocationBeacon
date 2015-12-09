@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C404047F19060F6300B264BA"
                BuildableName = "TouristLocationBeacon.app"
                BlueprintName = "TouristLocationBeacon"
-               ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
+               ReferencedContainer = "container:BAdventurous.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "C40404A019060F6300B264BA"
                BuildableName = "TouristLocationBeacon.xctest"
                BlueprintName = "TouristLocationBeaconTests"
-               ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
+               ReferencedContainer = "container:BAdventurous.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
             BlueprintName = "TouristLocationBeacon"
-            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
+            ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
             BlueprintName = "TouristLocationBeacon"
-            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
+            ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
             BlueprintName = "TouristLocationBeacon"
-            ReferencedContainer = "container:TouristLocationBeacon.xcodeproj">
+            ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

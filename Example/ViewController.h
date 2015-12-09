@@ -14,6 +14,7 @@
 
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *discoverImg;
+@property (weak, nonatomic) IBOutlet UIButton *discoverBtn;
+
 
 @end
