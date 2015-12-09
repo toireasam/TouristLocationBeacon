@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C404047F19060F6300B264BA"
-               BuildableName = "TouristLocationBeacon.app"
+               BuildableName = "BAdventurous.app"
                BlueprintName = "BAdventurousTarget"
                ReferencedContainer = "container:BAdventurous.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "TouristLocationBeacon.app"
+            BuildableName = "BAdventurous.app"
             BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "TouristLocationBeacon.app"
+            BuildableName = "BAdventurous.app"
             BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
-            BuildableName = "TouristLocationBeacon.app"
+            BuildableName = "BAdventurous.app"
             BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>

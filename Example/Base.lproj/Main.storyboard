@@ -23,7 +23,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="jar-BC-Ui8">
                                 <rect key="frame" x="105" y="112" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,11 +46,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gMI-oE-YAy">
-                                <rect key="frame" x="59" y="215" width="181" height="200"/>
+                                <rect key="frame" x="60" y="157" width="201" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn_play.png" backgroundImage="btn_play.png"/>
-                                <state key="selected" image="btn_play.png" backgroundImage="btn_play.png"/>
-                                <state key="highlighted" image="btn_play.png" backgroundImage="btn_play.png"/>
+                                <state key="normal" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
+                                <state key="selected" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
+                                <state key="highlighted" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
                                 <connections>
                                     <segue destination="VCb-1s-Eqk" kind="push" id="QOB-xg-G88"/>
                                 </connections>
@@ -71,7 +71,7 @@
         <scene sceneID="hCv-bg-mwl">
             <objects>
                 <navigationController id="e9o-75-LbN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tour" id="Vmu-AD-3fP"/>
+                    <tabBarItem key="tabBarItem" title="Tour" image="Info-26.png" id="Vmu-AD-3fP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yF8-vW-urv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -145,7 +145,7 @@
         <scene sceneID="edZ-Op-aSD">
             <objects>
                 <navigationController id="tvz-L9-Vrl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Preferences" id="jh0-cO-LZq"/>
+                    <tabBarItem key="tabBarItem" title="Preferences" image="Settings Filled-25.png" id="jh0-cO-LZq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwh-lM-KHq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +166,7 @@
         <scene sceneID="Fi3-ae-MY8">
             <objects>
                 <navigationController id="Aur-Ii-o38" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="VkI-3T-vrS"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-24.png" id="VkI-3T-vrS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R4Q-wL-2tg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -192,7 +192,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Aur-Ii-o38" kind="relationship" relationship="viewControllers" id="WvH-Vd-Bam"/>
                         <segue destination="e9o-75-LbN" kind="relationship" relationship="viewControllers" id="5IY-02-XIS"/>
@@ -205,10 +215,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_play.png" width="316" height="316"/>
+        <image name="Home-24.png" width="24" height="24"/>
+        <image name="Info-26.png" width="26" height="26"/>
+        <image name="Screen Shot 2015-12-09 at 17.21.11.png" width="432" height="560"/>
+        <image name="Settings Filled-25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oWP-UH-ZB2"/>
+        <segue reference="QOB-xg-G88"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

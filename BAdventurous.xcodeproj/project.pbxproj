@@ -12,6 +12,13 @@
 		B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */; };
 		B2C699DE1C1624EA00F35CDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699DD1C1624EA00F35CDD /* Default.png */; };
 		B2C699E41C172ACB00F35CDD /* btn_play.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699E31C172ACB00F35CDD /* btn_play.png */; };
+		B2C699E81C1898E000F35CDD /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699E71C1898E000F35CDD /* Home.png */; };
+		B2C699EA1C18995400F35CDD /* About-26.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699E91C18995400F35CDD /* About-26.png */; };
+		B2C699EC1C18998300F35CDD /* Info-26.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699EB1C18998300F35CDD /* Info-26.png */; };
+		B2C699EE1C1899CC00F35CDD /* Settings Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */; };
+		B2C699F01C1899FD00F35CDD /* Home-24.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699EF1C1899FD00F35CDD /* Home-24.png */; };
+		B2C699F21C189AA300F35CDD /* Screen Shot 2015-12-09 at 17.21.11.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699F11C189AA300F35CDD /* Screen Shot 2015-12-09 at 17.21.11.png */; };
+		B2C699F41C189F8600F35CDD /* Untitled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699F31C189F8600F35CDD /* Untitled@2x.png */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
@@ -76,6 +83,13 @@
 		B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "../../Downloads/Beacon-iOS-SDK-master-v30/Jaalee-Beacon-iOS-SDK-master v3.0/Example/SVProgressHUD.bundle"; sourceTree = "<group>"; };
 		B2C699DD1C1624EA00F35CDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
 		B2C699E31C172ACB00F35CDD /* btn_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_play.png; path = ../../Downloads/btn_play.png; sourceTree = "<group>"; };
+		B2C699E71C1898E000F35CDD /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ../../Downloads/Home.png; sourceTree = "<group>"; };
+		B2C699E91C18995400F35CDD /* About-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "About-26.png"; path = "../../Downloads/About-26.png"; sourceTree = "<group>"; };
+		B2C699EB1C18998300F35CDD /* Info-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Info-26.png"; path = "../../Downloads/Info-26.png"; sourceTree = "<group>"; };
+		B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings Filled-25.png"; path = "../../Downloads/Settings Filled-25.png"; sourceTree = "<group>"; };
+		B2C699EF1C1899FD00F35CDD /* Home-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-24.png"; path = "../../Downloads/Home-24.png"; sourceTree = "<group>"; };
+		B2C699F11C189AA300F35CDD /* Screen Shot 2015-12-09 at 17.21.11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2015-12-09 at 17.21.11.png"; path = "../Screen Shot 2015-12-09 at 17.21.11.png"; sourceTree = "<group>"; };
+		B2C699F31C189F8600F35CDD /* Untitled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled@2x.png"; path = "../Untitled@2x.png"; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -173,6 +187,13 @@
 		C404047719060F6300B264BA = {
 			isa = PBXGroup;
 			children = (
+				B2C699F31C189F8600F35CDD /* Untitled@2x.png */,
+				B2C699F11C189AA300F35CDD /* Screen Shot 2015-12-09 at 17.21.11.png */,
+				B2C699EF1C1899FD00F35CDD /* Home-24.png */,
+				B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */,
+				B2C699EB1C18998300F35CDD /* Info-26.png */,
+				B2C699E91C18995400F35CDD /* About-26.png */,
+				B2C699E71C1898E000F35CDD /* Home.png */,
 				B2C699E31C172ACB00F35CDD /* btn_play.png */,
 				C49E585D1B0EE043002B8718 /* Beacon Connection */,
 				C4D9B9C01908E45B009983B6 /* Res */,
@@ -399,22 +420,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C699F01C1899FD00F35CDD /* Home-24.png in Resources */,
+				B2C699E81C1898E000F35CDD /* Home.png in Resources */,
 				C49E58501B0EDD5A002B8718 /* position_a.png in Resources */,
 				C4D9B9C61908E467009983B6 /* immediate_image.png in Resources */,
 				C49E58581B0EDD63002B8718 /* position_b.png in Resources */,
 				B2C699DE1C1624EA00F35CDD /* Default.png in Resources */,
 				C4D9B9C71908E467009983B6 /* near_image.png in Resources */,
 				C49E585B1B0EDD63002B8718 /* position_e.png in Resources */,
+				B2C699F41C189F8600F35CDD /* Untitled@2x.png in Resources */,
 				C49E58591B0EDD63002B8718 /* position_c.png in Resources */,
 				C404049C19060F6300B264BA /* Images.xcassets in Resources */,
 				C404048E19060F6300B264BA /* InfoPlist.strings in Resources */,
+				B2C699EA1C18995400F35CDD /* About-26.png in Resources */,
 				C404049719060F6300B264BA /* Main.storyboard in Resources */,
 				C49E58571B0EDD63002B8718 /* motion.png in Resources */,
 				B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */,
 				C49E585A1B0EDD63002B8718 /* position_d.png in Resources */,
+				B2C699EC1C18998300F35CDD /* Info-26.png in Resources */,
 				C4D9B9C81908E467009983B6 /* unknown_image.png in Resources */,
 				B2C699E41C172ACB00F35CDD /* btn_play.png in Resources */,
+				B2C699EE1C1899CC00F35CDD /* Settings Filled-25.png in Resources */,
 				C49E585C1B0EDD63002B8718 /* position_f.png in Resources */,
+				B2C699F21C189AA300F35CDD /* Screen Shot 2015-12-09 at 17.21.11.png in Resources */,
 				C4D9B9C51908E467009983B6 /* far_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
