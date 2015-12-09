@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C404047F19060F6300B264BA"
                BuildableName = "TouristLocationBeacon.app"
-               BlueprintName = "TouristLocationBeacon"
+               BlueprintName = "BAdventurousTarget"
                ReferencedContainer = "container:BAdventurous.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C40404A019060F6300B264BA"
                BuildableName = "TouristLocationBeacon.xctest"
-               BlueprintName = "TouristLocationBeaconTests"
+               BlueprintName = "BAdventurous"
                ReferencedContainer = "container:BAdventurous.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
-            BlueprintName = "TouristLocationBeacon"
+            BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
-            BlueprintName = "TouristLocationBeacon"
+            BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -86,7 +86,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C404047F19060F6300B264BA"
             BuildableName = "TouristLocationBeacon.app"
-            BlueprintName = "TouristLocationBeacon"
+            BlueprintName = "BAdventurousTarget"
             ReferencedContainer = "container:BAdventurous.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

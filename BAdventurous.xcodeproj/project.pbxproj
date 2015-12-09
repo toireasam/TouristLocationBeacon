@@ -97,7 +97,7 @@
 		BEEAB3221BF292D000B562B8 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 		BEEAB3231BF292D000B562B8 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = "parse-library-1/ParseTwitterUtils.framework"; sourceTree = "<group>"; };
 		BEEAB3241BF292D000B562B8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1/ParseUI.framework"; sourceTree = "<group>"; };
-		C404048019060F6300B264BA /* TouristLocationBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouristLocationBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C404048019060F6300B264BA /* BAdventurous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAdventurous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C404048319060F6300B264BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C404048519060F6300B264BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C404048719060F6300B264BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -188,7 +188,7 @@
 		C404048119060F6300B264BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C404048019060F6300B264BA /* TouristLocationBeacon.app */,
+				C404048019060F6300B264BA /* BAdventurous.app */,
 				C40404A119060F6300B264BA /* TouristLocationBeacon.xctest */,
 			);
 			name = Products;
@@ -318,9 +318,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C404047F19060F6300B264BA /* TouristLocationBeacon */ = {
+		C404047F19060F6300B264BA /* BAdventurousTarget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C40404B219060F6300B264BA /* Build configuration list for PBXNativeTarget "TouristLocationBeacon" */;
+			buildConfigurationList = C40404B219060F6300B264BA /* Build configuration list for PBXNativeTarget "BAdventurousTarget" */;
 			buildPhases = (
 				C404047C19060F6300B264BA /* Sources */,
 				C404047D19060F6300B264BA /* Frameworks */,
@@ -330,14 +330,14 @@
 			);
 			dependencies = (
 			);
-			name = TouristLocationBeacon;
+			name = BAdventurousTarget;
 			productName = Example;
-			productReference = C404048019060F6300B264BA /* TouristLocationBeacon.app */;
+			productReference = C404048019060F6300B264BA /* BAdventurous.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C40404A019060F6300B264BA /* TouristLocationBeaconTests */ = {
+		C40404A019060F6300B264BA /* BAdventurous */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C40404B519060F6300B264BA /* Build configuration list for PBXNativeTarget "TouristLocationBeaconTests" */;
+			buildConfigurationList = C40404B519060F6300B264BA /* Build configuration list for PBXNativeTarget "BAdventurous" */;
 			buildPhases = (
 				C404049D19060F6300B264BA /* Sources */,
 				C404049E19060F6300B264BA /* Frameworks */,
@@ -348,7 +348,7 @@
 			dependencies = (
 				C40404A719060F6300B264BA /* PBXTargetDependency */,
 			);
-			name = TouristLocationBeaconTests;
+			name = BAdventurous;
 			productName = ExampleTests;
 			productReference = C40404A119060F6300B264BA /* TouristLocationBeacon.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -388,8 +388,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C404047F19060F6300B264BA /* TouristLocationBeacon */,
-				C40404A019060F6300B264BA /* TouristLocationBeaconTests */,
+				C404047F19060F6300B264BA /* BAdventurousTarget */,
+				C40404A019060F6300B264BA /* BAdventurous */,
 			);
 		};
 /* End PBXProject section */
@@ -458,7 +458,7 @@
 /* Begin PBXTargetDependency section */
 		C40404A719060F6300B264BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C404047F19060F6300B264BA /* TouristLocationBeacon */;
+			target = C404047F19060F6300B264BA /* BAdventurousTarget */;
 			targetProxy = C40404A619060F6300B264BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -579,7 +579,7 @@
 				INFOPLIST_FILE = "Example/TouristLocationBeacon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = toireasa.BAdventurous;
-				PRODUCT_NAME = TouristLocationBeacon;
+				PRODUCT_NAME = BAdventurous;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -602,7 +602,7 @@
 				INFOPLIST_FILE = "Example/TouristLocationBeacon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = toireasa.BAdventurous;
-				PRODUCT_NAME = TouristLocationBeacon;
+				PRODUCT_NAME = BAdventurous;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C40404B219060F6300B264BA /* Build configuration list for PBXNativeTarget "TouristLocationBeacon" */ = {
+		C40404B219060F6300B264BA /* Build configuration list for PBXNativeTarget "BAdventurousTarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C40404B319060F6300B264BA /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C40404B519060F6300B264BA /* Build configuration list for PBXNativeTarget "TouristLocationBeaconTests" */ = {
+		C40404B519060F6300B264BA /* Build configuration list for PBXNativeTarget "BAdventurous" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C40404B619060F6300B264BA /* Debug */,
