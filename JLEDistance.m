@@ -86,6 +86,7 @@ NSString *categoryText;
     self.mMajorValue.text = [NSString stringWithFormat:@"%d", [temp.major intValue]];
     self.mMinorValue.text = [NSString stringWithFormat:@"%d", [temp.major intValue]];
     self.mAccValue.text = [NSString stringWithFormat:@"%.2f", temp.accuracy];
+
     
     // Go to parse and check if UUID is there
     NSString *uuid = [temp.proximityUUID UUIDString];
@@ -94,6 +95,35 @@ NSString *categoryText;
     [self sendToParse:uuid];
     }
     
+    
+}
+
+-(void)UpdateLabels
+{
+    if([categoryText isEqual:@"Museum"] && [hallPreference isEqual:@"off"])
+    {
+        // Don't populate with info
+        self.touirstLocationNameLbl.text = @"you turned museum's off";
+        self.furtherInformationTxt.text = @"";
+        self.mProximityUUID.text = @"";
+        self.imageHolderScreenTwo = NULL;
+    }
+    else
+    {
+  
+   
+        self.touirstLocationNameLbl.text = locationNameText;
+        self.furtherInformationTxt.text = furtherInformationText;
+        
+        [self UpdateImage];
+     
+    }
+    
+
+}
+
+-(void)UpdateImage
+{
     // Don't populate with info
     PFQuery *query = [PFQuery queryWithClassName:@"TouristLocations"];
     [query whereKey:@"UUID" equalTo:@"EBEFD083-70A2-47C8-9837-E7B5634DF524"];
@@ -110,28 +140,6 @@ NSString *categoryText;
              [self.imageHolderScreenTwo loadInBackground];
          }
      }];
-    
-}
-
--(void)UpdateLabels
-{
-    if([categoryText isEqual:@"Museum"] && [hallPreference isEqual:@"off"])
-    {
-        // Don't populate with info
-        self.touirstLocationNameLbl.text = @"you turned museum's off";
-        self.furtherInformationTxt.text = @"";
-        self.mProximityUUID.text = @"";
-    }
-    else
-    {
-  
-   
-        self.touirstLocationNameLbl.text = locationNameText;
-        self.furtherInformationTxt.text = furtherInformationText;
-        
-     
-    }
-    
 
 }
 
@@ -165,7 +173,12 @@ NSString *categoryText;
     categoryText = category;
 }
 
-
++(void)takeArray:(NSMutableArray *)array
+{
+    NSLog(@"array is from the correct place");
+    NSLog(@"%@", array);
+    
+}
 @end
 
 

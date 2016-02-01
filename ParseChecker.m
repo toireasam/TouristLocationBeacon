@@ -27,6 +27,7 @@
                 // No beacons were found
                 
             }
+            NSMutableArray *phoneNumbers = [NSMutableArray new];
             for (PFObject *object in objects)
             {
                 
@@ -36,8 +37,13 @@
                 NSString *furtherInformation= object[@"Information"];
                 NSString *category = object[@"Category"];
                 
+                 [phoneNumbers addObject:touristLocationName];
+                NSLog(@"array is");
+       NSLog(@"%@", phoneNumbers);
                 // Lets send back the info
                 [JLEDistance RecieveParseDetails:touristLocationName FurtherInformation:furtherInformation andCategory:category];
+                
+                [JLEDistance takeArray:phoneNumbers];
                 
             }
         }
