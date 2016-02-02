@@ -54,11 +54,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gMI-oE-YAy">
-                                <rect key="frame" x="53" y="89" width="190" height="101"/>
+                                <rect key="frame" x="14" y="110" width="292" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
-                                <state key="selected" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
-                                <state key="highlighted" image="Screen Shot 2015-12-09 at 17.21.11.png" backgroundImage="Screen Shot 2015-12-09 at 17.21.11.png"/>
+                                <state key="normal" image="homepage.png" backgroundImage="homepage.png"/>
+                                <state key="selected" image="homepage.png" backgroundImage="homepage.png"/>
+                                <state key="highlighted" image="homepage.png" backgroundImage="homepage.png"/>
                                 <connections>
                                     <segue destination="VCb-1s-Eqk" kind="push" identifier="distance" id="QOB-xg-G88"/>
                                 </connections>
@@ -133,22 +133,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t9d-21-rba">
-                                <rect key="frame" x="60" y="475" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6D-9T-JYP">
-                                <rect key="frame" x="60" y="384" width="220" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="22T-OW-DiX">
-                                <rect key="frame" x="45" y="290" width="240" height="128"/>
+                                <rect key="frame" x="24" y="427" width="272" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -166,9 +152,7 @@
                         <outlet property="furtherInformationTxt" destination="MKc-uK-ZFS" id="707-Cu-RJE"/>
                         <outlet property="imageHolderScreenTwo" destination="4Xd-d5-hu1" id="D7G-Ay-oAl"/>
                         <outlet property="tableView" destination="22T-OW-DiX" id="43q-OK-hNL"/>
-                        <outlet property="testTextLbl" destination="R6D-9T-JYP" id="ngg-yP-xm0"/>
                         <outlet property="touirstLocationNameLbl" destination="u8k-Vv-uEq" id="pUN-2m-HI3"/>
-                        <outlet property="touirstLocationNameLbl2" destination="t9d-21-rba" id="PSs-jC-18j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiN-ef-PRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,11 +235,11 @@
     <resources>
         <image name="Home-24.png" width="24" height="24"/>
         <image name="Info-26.png" width="26" height="26"/>
-        <image name="Screen Shot 2015-12-09 at 17.21.11.png" width="432" height="560"/>
         <image name="Settings Filled-25.png" width="25" height="25"/>
+        <image name="homepage.png" width="640" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UVW-ZH-1BQ"/>
+        <segue reference="QOB-xg-G88"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B204EB841C6134C800C0C59B /* homepage.png in Resources */ = {isa = PBXBuildFile; fileRef = B204EB831C6134C800C0C59B /* homepage.png */; };
 		B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A096AC1BF9203D00522930 /* ParseChecker.m */; };
 		B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */; };
 		B2BB1C3D1C146DF0007A86D8 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2BB1C3C1C146DF0007A86D8 /* SVProgressHUD.bundle */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B204EB831C6134C800C0C59B /* homepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homepage.png; path = ../../Downloads/homepage.png; sourceTree = "<group>"; };
 		B2A096AB1BF9203D00522930 /* ParseChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseChecker.h; sourceTree = "<group>"; };
 		B2A096AC1BF9203D00522930 /* ParseChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseChecker.m; sourceTree = "<group>"; };
 		B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				B2C699EF1C1899FD00F35CDD /* Home-24.png */,
 				B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */,
 				B2C699EB1C18998300F35CDD /* Info-26.png */,
+				B204EB831C6134C800C0C59B /* homepage.png */,
 				B2C699E91C18995400F35CDD /* About-26.png */,
 				B2C699E71C1898E000F35CDD /* Home.png */,
 				B2C699E31C172ACB00F35CDD /* btn_play.png */,
@@ -418,6 +421,7 @@
 				C49E58581B0EDD63002B8718 /* position_b.png in Resources */,
 				C4D9B9C71908E467009983B6 /* near_image.png in Resources */,
 				C49E585B1B0EDD63002B8718 /* position_e.png in Resources */,
+				B204EB841C6134C800C0C59B /* homepage.png in Resources */,
 				C49E58591B0EDD63002B8718 /* position_c.png in Resources */,
 				C404049C19060F6300B264BA /* Images.xcassets in Resources */,
 				C404048E19060F6300B264BA /* InfoPlist.strings in Resources */,

@@ -70,7 +70,7 @@ NSArray *recipes;
     
 //    
 //    self.cars = [NSMutableArray arrayWithObjects:@"1",@"car2",@"car3",nil];
-    _tableData = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    _tableData = [NSMutableArray arrayWithObjects: nil];
     
     
 
@@ -158,26 +158,27 @@ NSArray *recipes;
         }
         else
         {
-        [_tableData addObject:testText2];
+            BOOL isTheObjectThereNow = [_tableData containsObject: arrayTest[0]];
+            if(isTheObjectThereNow == false)
+            {
+        [_tableData addObject:arrayTest[0]];
+            }
+        isTheObjectThereNow = [_tableData containsObject: arrayTest[1]];
+if(isTheObjectThereNow == false)
+{
+            [_tableData addObject:arrayTest[1]];
+}
+else{
+    //nothing
+    NSLog(@"it is here");
+}
+    
         NSLog(@"%@", _tableData);
                        NSLog(@"%@", _tableData);
             NSLog(@"%@", _tableData);
         [self.tableView reloadData];
         }
-        
-        if(tmpString != NULL)
-        {
-            [_tableData addObject:tmpString];
-         
-
-        }
-        else if(tmpString2 != NULL)
-        {
-               [_tableData addObject:tmpString2];
-        }
-        else{
-            //nothing
-        }
+       
         
         
         [self UpdateImage];
@@ -239,23 +240,24 @@ NSArray *recipes;
 }
 NSString *tmpString;
 NSString *tmpString2;
-
+NSMutableArray* arrayTest;
 +(void)takeArray:(NSMutableArray *)array andSecond:(NSMutableArray *)information
 {
     NSLog(@"array is from the correct place");
     NSLog(@"%@", array);
-  
+    NSLog(@"it just printed");
     NSString *str = [array componentsJoinedByString:@" "];
     testText = str;
-    if(array <= 2)
-    {
-    tmpString = [array objectAtIndex:0];
-    NSLog(tmpString);
-    }
-    else {
-    tmpString2 = [array objectAtIndex:1];
-    NSLog(tmpString2);
-    }
+    arrayTest = array;
+//    if(array <= 1)
+//    {
+//    tmpString = [array objectAtIndex:0];
+//    NSLog(tmpString);
+//    }
+//    else {
+//    tmpString2 = [array objectAtIndex:1];
+//    NSLog(tmpString2);
+//    }
   
     
 }
