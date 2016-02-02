@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *mMinorValue;
 @property (weak, nonatomic) IBOutlet UILabel *mAccValue;
 @property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl;
+@property (weak, nonatomic) IBOutlet UILabel *testTextLbl;
 @property (weak, nonatomic) IBOutlet UILabel *touirstLocationNameLbl2;
 @property (weak, nonatomic) IBOutlet UILabel *furtherInformationLbl;
 @property (nonatomic, strong) NSString *hallPreference;
@@ -33,5 +34,5 @@
 +(void)RecieveParseDetails:(NSString *)locationName FurtherInformation:(NSString *)furtherInformation andCategory:(NSString *)category;
 -(void)UpdateLabels;
 +(void)sendToParse:(NSString *)uuid;
-+(void)takeArray:(NSMutableArray *)array;
++(void)takeArray:(NSMutableArray *)array andSecond:(NSMutableArray *)information;
 @end

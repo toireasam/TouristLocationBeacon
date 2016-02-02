@@ -22,6 +22,9 @@ static NSString * const kIdentifier = @"jaalee.Example";
 @property (nonatomic, strong) JLEBeaconManager  *beaconManager;
 @property (nonatomic, strong) JLEBeaconRegion  *beaconRegion;
 @property (nonatomic, strong) PFFile  *file;
+@property (nonatomic, strong) NSMutableArray *cars;
+@property(nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *tableData;
 
 
 
@@ -32,6 +35,11 @@ static NSString * const kIdentifier = @"jaalee.Example";
 NSString *locationNameText;
 NSString *furtherInformationText;
 NSString *categoryText;
+NSString *testText;
+NSArray *recipes;
+
+
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -60,14 +68,17 @@ NSString *categoryText;
     
     NSLog(hallPreference);
     
-
+//    
+//    self.cars = [NSMutableArray arrayWithObjects:@"1",@"car2",@"car3",nil];
+    _tableData = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    
+    
 
 
         [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]]; 
 
-   
-   
+ 
  
 }
 
@@ -113,7 +124,61 @@ NSString *categoryText;
   
    
         self.touirstLocationNameLbl.text = locationNameText;
+        self.testTextLbl.text = testText;
         self.furtherInformationTxt.text = furtherInformationText;
+        
+        
+//        [self.cars addObject:testText];
+//        NSString *new = @"new";
+////        [_tableData addObject:ne];
+//           NSLog(@"%@", _tableData);
+//  [self.tableView reloadData];
+        NSString *testText2;
+        if(testText == NULL)
+        {
+            testText2 = @"null";
+            
+        }
+        else
+
+        {
+        
+        BOOL isTheObjectThere = [_tableData containsObject: testText];
+            if(isTheObjectThere == false)
+            {
+        testText2 = testText;
+            }
+            else
+                testText2=@"null";
+        }
+        
+        if(testText2 == @"null")
+        {
+            // nothing
+        }
+        else
+        {
+        [_tableData addObject:testText2];
+        NSLog(@"%@", _tableData);
+                       NSLog(@"%@", _tableData);
+            NSLog(@"%@", _tableData);
+        [self.tableView reloadData];
+        }
+        
+        if(tmpString != NULL)
+        {
+            [_tableData addObject:tmpString];
+         
+
+        }
+        else if(tmpString2 != NULL)
+        {
+               [_tableData addObject:tmpString2];
+        }
+        else{
+            //nothing
+        }
+        
         
         [self UpdateImage];
      
@@ -172,12 +237,47 @@ NSString *categoryText;
     furtherInformationText = furtherInformation;
     categoryText = category;
 }
+NSString *tmpString;
+NSString *tmpString2;
 
-+(void)takeArray:(NSMutableArray *)array
++(void)takeArray:(NSMutableArray *)array andSecond:(NSMutableArray *)information
 {
     NSLog(@"array is from the correct place");
     NSLog(@"%@", array);
+  
+    NSString *str = [array componentsJoinedByString:@" "];
+    testText = str;
+    if(array <= 2)
+    {
+    tmpString = [array objectAtIndex:0];
+    NSLog(tmpString);
+    }
+    else {
+    tmpString2 = [array objectAtIndex:1];
+    NSLog(tmpString2);
+    }
+  
     
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_tableData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [_tableData objectAtIndex:indexPath.row];
+    return cell;
 }
 @end
 

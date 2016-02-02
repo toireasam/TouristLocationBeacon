@@ -140,6 +140,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6D-9T-JYP">
+                                <rect key="frame" x="60" y="384" width="220" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="22T-OW-DiX">
+                                <rect key="frame" x="45" y="290" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VCb-1s-Eqk" id="m2g-bg-eJ8"/>
+                                    <outlet property="delegate" destination="VCb-1s-Eqk" id="yD0-Lh-C0Y"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -149,6 +165,8 @@
                         <outlet property="furtherInformationLbl" destination="Ooy-Jb-DN2" id="urT-zP-kVi"/>
                         <outlet property="furtherInformationTxt" destination="MKc-uK-ZFS" id="707-Cu-RJE"/>
                         <outlet property="imageHolderScreenTwo" destination="4Xd-d5-hu1" id="D7G-Ay-oAl"/>
+                        <outlet property="tableView" destination="22T-OW-DiX" id="43q-OK-hNL"/>
+                        <outlet property="testTextLbl" destination="R6D-9T-JYP" id="ngg-yP-xm0"/>
                         <outlet property="touirstLocationNameLbl" destination="u8k-Vv-uEq" id="pUN-2m-HI3"/>
                         <outlet property="touirstLocationNameLbl2" destination="t9d-21-rba" id="PSs-jC-18j"/>
                     </connections>
@@ -237,7 +255,7 @@
         <image name="Settings Filled-25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QOB-xg-G88"/>
+        <segue reference="UVW-ZH-1BQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
