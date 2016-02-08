@@ -11,6 +11,7 @@
 #import "ParseChecker.h"
 #import <PARSEUI/PFImageView.h>
 #import <Parse/Parse.h>
+#import "TestViewController.h"
 
 
 
@@ -285,7 +286,21 @@ NSMutableArray* arrayTest;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"push" sender:tableView];
+    
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"push"]) {
+        TestViewController *nextVC = (TestViewController *)[segue destinationViewController];
+        nextVC.testPreference = @"ive got it";
+        
+        
+    }
+}
+
+
+
 
 
 @end
