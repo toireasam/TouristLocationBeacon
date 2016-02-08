@@ -281,6 +281,13 @@ NSMutableArray* arrayTest;
     cell.textLabel.text = [_tableData objectAtIndex:indexPath.row];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"push" sender:tableView];
+}
+
+
 @end
 
 

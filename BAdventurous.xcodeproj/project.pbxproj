@@ -17,6 +17,7 @@
 		B2C699EC1C18998300F35CDD /* Info-26.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699EB1C18998300F35CDD /* Info-26.png */; };
 		B2C699EE1C1899CC00F35CDD /* Settings Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */; };
 		B2C699F01C1899FD00F35CDD /* Home-24.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C699EF1C1899FD00F35CDD /* Home-24.png */; };
+		B2E96E561C68CA3400CDAA8B /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E96E551C68CA3400CDAA8B /* TestViewController.m */; };
 		BEEAB2EF1BF2821900B562B8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */; };
 		BEEAB2F21BF2826900B562B8 /* WaitProgressShow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F11BF2826900B562B8 /* WaitProgressShow.m */; };
 		BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */; };
@@ -86,6 +87,8 @@
 		B2C699EB1C18998300F35CDD /* Info-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Info-26.png"; path = "../../Downloads/Info-26.png"; sourceTree = "<group>"; };
 		B2C699ED1C1899CC00F35CDD /* Settings Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings Filled-25.png"; path = "../../Downloads/Settings Filled-25.png"; sourceTree = "<group>"; };
 		B2C699EF1C1899FD00F35CDD /* Home-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-24.png"; path = "../../Downloads/Home-24.png"; sourceTree = "<group>"; };
+		B2E96E541C68CA3400CDAA8B /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = Example/TestViewController.h; sourceTree = "<group>"; };
+		B2E96E551C68CA3400CDAA8B /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = Example/TestViewController.m; sourceTree = "<group>"; };
 		BEEAB2ED1BF2821900B562B8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Connection/BaseViewController.h; sourceTree = "<group>"; };
 		BEEAB2EE1BF2821900B562B8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Connection/BaseViewController.m; sourceTree = "<group>"; };
 		BEEAB2F01BF2826900B562B8 /* WaitProgressShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitProgressShow.h; sourceTree = "<group>"; };
@@ -316,6 +319,8 @@
 				BEEAB2F61BF2831F00B562B8 /* JLEDistance.h */,
 				BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */,
 				B2A096AB1BF9203D00522930 /* ParseChecker.h */,
+				B2E96E541C68CA3400CDAA8B /* TestViewController.h */,
+				B2E96E551C68CA3400CDAA8B /* TestViewController.m */,
 				B2A096AC1BF9203D00522930 /* ParseChecker.m */,
 				B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */,
 				B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */,
@@ -460,6 +465,7 @@
 				B2BB1C3B1C13AC87007A86D8 /* SettingsViewController.m in Sources */,
 				B2A096AD1BF9203D00522930 /* ParseChecker.m in Sources */,
 				C404049419060F6300B264BA /* AppDelegate.m in Sources */,
+				B2E96E561C68CA3400CDAA8B /* TestViewController.m in Sources */,
 				C404049019060F6300B264BA /* main.m in Sources */,
 				BEEAB2F81BF2831F00B562B8 /* JLEDistance.m in Sources */,
 			);
