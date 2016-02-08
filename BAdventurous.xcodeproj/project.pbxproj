@@ -319,9 +319,9 @@
 				BEEAB2F61BF2831F00B562B8 /* JLEDistance.h */,
 				BEEAB2F71BF2831F00B562B8 /* JLEDistance.m */,
 				B2A096AB1BF9203D00522930 /* ParseChecker.h */,
+				B2A096AC1BF9203D00522930 /* ParseChecker.m */,
 				B2E96E541C68CA3400CDAA8B /* TestViewController.h */,
 				B2E96E551C68CA3400CDAA8B /* TestViewController.m */,
-				B2A096AC1BF9203D00522930 /* ParseChecker.m */,
 				B2BB1C391C13AC87007A86D8 /* SettingsViewController.h */,
 				B2BB1C3A1C13AC87007A86D8 /* SettingsViewController.m */,
 			);

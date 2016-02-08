@@ -282,21 +282,34 @@ NSMutableArray* arrayTest;
     cell.textLabel.text = [_tableData objectAtIndex:indexPath.row];
     return cell;
 }
-
+NSString *selectedRowInfo;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    selectedRowInfo = [_tableData objectAtIndex:indexPath.row];
+    
+    selectedRowInfo = [selectedRowInfo stringByAppendingString:[@(indexPath.row)description]];
+    NSLog(@"row selece");
+    NSLog(selectedRowInfo);
+    
+    
     [self performSegueWithIdentifier:@"push" sender:tableView];
     
 }
 
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"push"]) {
         TestViewController *nextVC = (TestViewController *)[segue destinationViewController];
-        nextVC.testPreference = @"ive got it";
+           BOOL isTheObjectThereNow = [_tableData containsObject: arrayTest[0]];
+   
+        
+        nextVC.testPreference = selectedRowInfo;
+        }
+    
         
         
-    }
+    
 }
 
 
